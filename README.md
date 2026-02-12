@@ -34,7 +34,7 @@ pip install numpy scikit-learn matplotlib openjij dwave-neal tqdm
 ```
 
 ## 使用方法
-1. 論文再現.ipynb を開き、全てのセルを実行します
+1. nqc2025.ipynb を開き、全てのセルを実行します
 2. デフォルト設定では neal.SimulatedAnnealingSampler が使用されます
 3. 初期化フェーズ（64ステップ）と最適化フェーズ（256ステップ）を経て、計320ステップの探索が行われます
 
