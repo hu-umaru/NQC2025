@@ -22,7 +22,7 @@
 * **目標**: 128件の混在データからFakeのみを除去し、テスト精度を回復させる
 
 ## 構成
-* `論文再現.ipynb`: 全工程を網羅したJupyter Notebook
+* `nqc2025.ipynb`: 全工程を網羅したJupyter Notebook
   * データの生成
   * Neal (Simulated Annealing) を用いた32 SEED分の最適化実行
   * 結果の可視化（Selection Pattern & Accuracy Comparison）
