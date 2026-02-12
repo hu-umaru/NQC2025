@@ -39,8 +39,17 @@ pip install numpy scikit-learn matplotlib openjij dwave-neal tqdm
 3. 初期化フェーズ（64ステップ）と最適化フェーズ（256ステップ）を経て、計320ステップの探索が行われます
 
 ## 再現結果の解釈
+<img width="841" height="560" alt="Image" src="https://github.com/user-attachments/assets/59fc832f-2ba1-464f-99df-f3f35409e307" />
+
 * 選択パターン: ヒートマップにおいて、Fake領域（後半64件）が優先的に除外（黒色）されます。これは、低エントロピーなノイズほどモデルへの悪影響が強く、優先的に除去されるという論文の知見と一致します。
-* 精度の向上: ノイズ除去前はランダム予測（精度約50%）ですが、最適化後はテスト精度が大幅に向上し、モデルが正しく「多数決」の法則を学習できたことが示されます。
+
+<img width="536" height="528" alt="Image" src="https://github.com/user-attachments/assets/79045195-bf2f-480a-b5f6-2c9e117377c4" />
+
+Average Accuracy (Before): 0.4934
+
+Average Accuracy (After) : 0.8044
+
+* 精度の向上: ノイズ除去前はランダム予測ですが、最適化後はテスト精度が大幅に向上し、モデルが正しく「多数決」の法則を学習できたことが示されます。
 
 ## ライセンス
 このプロジェクトは MIT License の下で公開されています。
